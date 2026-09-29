@@ -1,13 +1,15 @@
-# Licence status — decision pending
+# Licence status
 
-This is a preparation candidate for review, not an open-source release.
-No reuse licence is granted by this notice. The supplied earlier generated
-archive carried an MIT statement; the user has clarified that adoption was not
-confirmed. That archive is retained unchanged in the private provenance record.
-Its statement is not treated as evidence of an authorised licensing decision.
+COMOTI has selected the MIT License for its methodological
+software contribution to OLGA Task T2.5.
 
-Before publication, the responsible rights holders must confirm the licence for
-the code, documentation and synthetic examples and the authorised attribution.
-If MIT or another licence is selected, add its actual approved text and update
-README and CITATION.cff consistently. Confidential data and partner documents
-are outside any proposed software licence and are not included here.
+The complete MIT licence and copyright notice must be included
+in the LICENSE file. This note does not replace that licence.
+
+The software licence does not cover confidential experimental
+data, original trial records, partner documents or D2.8.
+Decisions concerning disclosure of trial data remain with
+the participating partners.
+
+Synthetic examples are for demonstration only and do not
+contain OLGA campaign data.
