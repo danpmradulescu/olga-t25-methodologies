@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document><name>SYNTHETIC TRACK, NOT AN OLGA ROUTE</name><Placemark><gx:Track>
+<when>2000-01-01T00:00:00Z</when><when>2000-01-01T00:01:00Z</when><when>2000-01-01T00:02:00Z</when>
+<gx:coord>0 0 0</gx:coord><gx:coord>0.001 0 0</gx:coord><gx:coord>0.001 0 0</gx:coord>
+</gx:Track></Placemark></Document></kml>

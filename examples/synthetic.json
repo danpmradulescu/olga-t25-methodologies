@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "scenario_id": "SYNTHETIC_DEMONSTRATION_NOT_OLGA_DATA",
+  "route": {
+    "one_way_distance_km": 10,
+    "earth_radius_km": 6371.0
+  },
+  "identical_legs": 2,
+  "distance_profile": [
+    {
+      "speed_kmh": 20,
+      "distance_fraction": 0.5
+    },
+    {
+      "speed_kmh": 40,
+      "distance_fraction": 0.5
+    }
+  ],
+  "diesel": {
+    "curve": [
+      [
+        10,
+        40
+      ],
+      [
+        20,
+        30
+      ],
+      [
+        40,
+        20
+      ],
+      [
+        50,
+        15
+      ]
+    ],
+    "curve_factor": 1,
+    "density_kg_l": 0.835,
+    "lhv_mj_kg": 42.6
+  },
+  "cng": {
+    "curve": [
+      [
+        10,
+        30
+      ],
+      [
+        20,
+        25
+      ],
+      [
+        40,
+        15
+      ],
+      [
+        50,
+        12
+      ]
+    ],
+    "curve_factor": 1,
+    "lhv_mj_kg": 50
+  },
+  "stationary_allowance": {
+    "minutes_per_leg": 6,
+    "diesel_l_h": 2,
+    "cng_kg_h": 2
+  },
+  "biocng": {
+    "dry_mole_fractions": {
+      "CH4": 0.97,
+      "CO2": 0.02,
+      "N2": 0.01
+    },
+    "methane_lhv_mj_kg": 50
+  },
+  "ghg": {
+    "reference_gco2e_mj": 94,
+    "biocng_complete_gco2e_mj": [
+      18.8,
+      28.2,
+      32.9,
+      47
+    ],
+    "sensitivity_intensity_gco2e_mj": 28.2,
+    "gas_energy_factors": [
+      0.8,
+      1,
+      1.2
+    ]
+  },
+  "evidence": {
+    "modelled": "Entire demonstration is synthetic. It is not the OLGA project scenario or an experimental dataset.",
+    "external_reference": "94 gCO2e/MJ is used as an illustrative RED transport comparator; all scenario intensities are hypothetical."
+  }
+}

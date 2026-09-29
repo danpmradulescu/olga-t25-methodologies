@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scenario_id": "SYNTHETIC_FUEL_COST_NOT_PROJECT_DATA",
+  "assessment_date": "synthetic demonstration; no market observation",
+  "distance_km": 20,
+  "currency": "RON",
+  "price_basis": "VAT_inclusive",
+  "consumption_boundary": "synthetic total service quantities",
+  "fuels": {
+    "Diesel": {
+      "quantity": 6,
+      "quantity_unit": "L",
+      "quantity_status": "synthetic",
+      "quantity_source": "Artificial hand-checkable example, not route-model output",
+      "unit_price": 8,
+      "price_unit": "RON/L",
+      "price_basis": "VAT_inclusive",
+      "price_status": "synthetic",
+      "price_source": "Hypothetical example, not a station quotation"
+    },
+    "CNG": {
+      "quantity": 4,
+      "quantity_unit": "kg",
+      "quantity_status": "synthetic",
+      "quantity_source": "Artificial hand-checkable example, not route-model output",
+      "unit_price": 9,
+      "price_unit": "RON/kg",
+      "price_basis": "VAT_inclusive",
+      "price_status": "synthetic",
+      "price_source": "Hypothetical example, not a station quotation"
+    },
+    "Bio-CNG": {
+      "quantity": 4.4,
+      "quantity_unit": "kg",
+      "quantity_status": "synthetic",
+      "quantity_source": "Artificial hand-checkable example, not route-model output",
+      "unit_price": 10,
+      "price_unit": "RON/kg",
+      "price_basis": "VAT_inclusive",
+      "price_status": "synthetic",
+      "price_source": "Hypothetical example, not a station quotation"
+    }
+  },
+  "consumption_factors": [
+    0.8,
+    1,
+    1.2
+  ],
+  "price_factors": [
+    0.9,
+    1,
+    1.1
+  ]
+}

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Preparation metadata only. Confirm contributors and add the actual release URL before citing a public release."
+title: "OLGA T2.5 reproducible calculation methods"
+type: software
+version: 0.3.0rc1
+authors:
+  - name: "OLGA T2.5 methodology contributors (attribution pending confirmation)"
+abstract: "Empirical route screening, descriptive measurement processing and optional illustrative fuel-cost calculations. Preparation candidate; not a published release."
