@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+run_*/
+private/
+confidential/
+outputs/
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.zip
+.env
+.env.*
