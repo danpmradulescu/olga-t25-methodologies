@@ -1,8 +1,17 @@
 cff-version: 1.2.0
-message: "Preparation metadata only. Confirm contributors and add the actual release URL before citing a public release."
+message: "Cite this source version and the exact GitHub tag or commit used. See docs/RELEASE.md for publication verification."
 title: "OLGA T2.5 reproducible calculation methods"
 type: software
-version: 0.3.0rc1
+version: "0.3.0"
+license: MIT
+repository-code: "https://github.com/danpmradulescu/olga-t25-methodologies"
 authors:
-  - name: "OLGA T2.5 methodology contributors (attribution pending confirmation)"
-abstract: "Empirical route screening, descriptive measurement processing and optional illustrative fuel-cost calculations. Preparation candidate; not a published release."
+  - family-names: "Radulescu"
+    given-names: "Dan"
+abstract: "Descriptive measurement processing, timestamped GPS analysis, empirical route and conditional GHG screening, and illustrative fuel-expenditure calculations. Includes synthetic examples; confidential OLGA campaign data are excluded."
+keywords:
+  - OLGA
+  - reproducible methods
+  - CNG
+  - biomethane
+  - fuel expenditure

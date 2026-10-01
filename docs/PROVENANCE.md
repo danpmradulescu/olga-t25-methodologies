@@ -29,3 +29,19 @@ Confidential source hashes, input mapping and reproduction results are kept
 in the separate private verification annex. Public examples contain no campaign
 results. Actual project reproduction and synthetic tests verify numerical
 consistency; they do not validate the model against a common-route experiment.
+
+## Source package 0.3.0
+
+Prepared on 1 October 2026 from the user-supplied GitHub source archive.
+The archive comment identifies the base commit as
+`9d5eb12ef495479c274dd72dd7af9c4277f10fa9`.
+This identifies the incoming snapshot, not the commit of version 0.3.0.
+
+The update changes licence, documentation, citation and version metadata.
+All calculation modules other than the package version declaration, all tests
+and all synthetic inputs remain byte-for-byte identical to that snapshot.
+Fresh checks use synthetic inputs only. The earlier private reproduction
+record is retained as historical evidence; it has not been rerun for 0.3.0.
+D2.8's recorded v0.2.0 calculations must retain their original provenance.
+The later public source is a methods reference, not a replacement execution
+record for results obtained with an earlier version.

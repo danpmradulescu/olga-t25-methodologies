@@ -1,33 +1,65 @@
-# Preparing the GitHub release
+# Publish and cite version 0.3.0
 
-This candidate has not been uploaded to GitHub. It is a reviewable source tree,
-not a licence grant or confirmation of consortium publication approval.
+This source package is ready for upload to the existing repository. Its
+preparation date is 1 October 2026. Upload, public access and a GitHub release
+have not been verified by the local checks. The source archive does not
+create a remote commit, tag, release or DOI.
 
-1. Review the code and methodology against the final D2.8 interpretation.
-2. Confirm the responsible repository owner, software contributors and rights
-   to release code/documentation. Deliverable authors are not automatically
-   software authors. Choose the licence and replace LICENSE_STATUS.md with the
-   appropriate confirmed text; update README and CITATION.cff.
-3. Review the source-only archive for confidential material. Do not publish the
-   outer preparation bundle or its private verification annex. Exclude private
-   inputs, outputs, source hashes and attachments from all git history.
-4. Run all synthetic commands and tests, record the interpreter and exact files.
-5. If partner feedback changes methods, increment the candidate and rerun the
-   affected checks. An agreed stable release may use 0.3.0; do not cite it until
-   actually created and checked.
-6. Publish the reviewed source tree under the chosen account/organisation. Create
-   a fixed version tag and release. Check access and download from that release.
-7. Replace provisional contributor metadata, set the real release URL and date
-   in CITATION.cff, and optionally obtain an archive DOI. Do not invent a DOI.
-8. Add the verified version-specific reference to D2.8. State which modules and
-   versions were actually executed. The new cost module is optional and must not
-   be described as used in an earlier draft that did not contain it.
+## Upload the source
 
-Suggested citation structure (complete only with real publication metadata):
-Confirmed contributors (year). OLGA T2.5 reproducible calculation methods,
-version [released version], [actual version-specific URL or DOI].
+1. Unpack the source ZIP. In the existing GitHub repository use **Add file >
+   Upload files** from its root. Upload the contents of the unpacked folder,
+   preserving `docs/`, `examples/`, `olga_route_model/` and `tests/`. Do not
+   upload the ZIP itself or create an extra enclosing directory.
+2. Replace the matching paths. Include the new `LICENSE` file. If the file
+   picker hides `.gitignore`, keep the existing file: it is unchanged. Review
+   the changed-file list before committing. No confidential project files or
+   local run outputs belong in this upload.
+3. Suggested commit message: `Prepare v0.3.0 with MIT licence and verified examples`.
+4. Check the root README, `LICENSE`, `CITATION.cff` and package version on
+   GitHub. Run the README commands on a fresh download if uploaded file
+   contents differ from this package.
 
-Suggested report wording after verification: "The descriptive processing and
-empirical route calculations were reproduced using [software and version].
-The public source contains methodology and synthetic examples. Campaign inputs
-are confidential and are held separately by the project."
+The SHA256SUMS.json file covers every distributed source file other than
+itself. Local output folders and Python caches are excluded. Any later edit
+to a listed file requires regenerating its checksum before freezing a release.
+
+## Freeze the reference
+
+1. From the final reviewed commit, create a GitHub release with tag `v0.3.0`
+   and title `OLGA T2.5 reproducible calculation methods 0.3.0`.
+2. The release description should mention the MIT licence, four calculation
+   modules and synthetic examples. State that experimental data are excluded
+   and that this is a methodology reference, not independent model validation.
+3. Verify that the repository, tag and downloadable source are accessible
+   to the intended readers. A private repository cannot be described as a
+   publicly accessible methods reference.
+4. Copy the actual tag URL and full commit SHA. Do not reuse the incoming
+   archive's base commit as the identifier of this updated source.
+5. In D2.8 use the verified link and access date. No DOI is assigned here.
+
+CITATION.cff names Dan Radulescu for this software citation. This does not
+replace or redefine the COMOTI, TUCN and T5.1 author/contributor list in D2.8.
+No release date or invented version-specific URL is included before actual
+publication.
+
+## D2.8 reference after publication
+
+Use the following structure, replacing the bracketed fields with the actual
+GitHub metadata only after verification:
+
+Radulescu, D. (2026). OLGA T2.5 reproducible calculation methods, version
+0.3.0 [software]. GitHub. [Verified tag URL]. Commit: [full SHA]. MIT License.
+Accessed [date].
+
+Describe this as the public source for the methodology. Retain the original
+v0.2.0 calculation record and private reproduction bundle where they support
+existing numerical results. Do not claim that 0.3.0 produced those results
+unless the corresponding authorised inputs have actually been rerun with it.
+
+A suitable methods statement after public access has been checked is:
+
+"The calculation methods and synthetic examples are available in the
+versioned OLGA T2.5 methodology repository under the MIT License. Experimental
+inputs and project reproduction records are held separately under the
+project's confidentiality arrangements."

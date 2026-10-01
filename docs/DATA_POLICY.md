@@ -4,7 +4,7 @@ Use four evidence classes: measured, derived, modelled and external-reference.
 Synthetic examples form a separate demonstration class and are never project
 measurements. Unit conversion does not change the evidence class of an input.
 
-The public candidate contains algorithms, formulas, limitations, synthetic
+The public source package contains algorithms, formulas, limitations, synthetic
 inputs and checks. It contains no actual Testo readings, vehicle consumption
 nodes, original KML tracks, project workbooks, private reproduction outputs,
 partner messages, or D2.8 text. Modelled quantities derived from confidential
@@ -17,7 +17,7 @@ quality. Hashes and private filenames also need a disclosure decision before
 publication; the private verification archive must never be pushed.
 
 The ignore file is a convenience, not access control. Check all staged files
-and git history before making any repository public. This supplied candidate
+and git history before making any repository public. This supplied source package
 contains no git history. Do not upload the outer preparation bundle or its
 private annex to a public repository. Publish only the reviewed source archive.
 

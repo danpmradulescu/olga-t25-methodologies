@@ -1,10 +1,16 @@
 # OLGA T2.5 reproducible calculation methods
 
-Preparation candidate **0.3.0rc1**, 29 September 2026. Not a published release.
-Licence and named software-contributor attribution are pending confirmation. No
-open-source licence is granted by this preparation package. See LICENSE_STATUS.md.
+Version **0.3.0**. Source package prepared on 1 October 2026.
 
-This repository candidate documents three calculation components:
+Licensed under the [MIT License](LICENSE), copyright (c) 2026 Dan Radulescu.
+[Software licence and data rights](LICENSE_STATUS.md) explains the scope.
+Repository: https://github.com/danpmradulescu/olga-t25-methodologies
+
+This version identifies the supplied source. A GitHub tag/release and public
+access must be checked before citing it as a published release. See
+[publication and citation](docs/RELEASE.md).
+
+This repository documents three calculation components:
 
 | Component | Executable | Documentation |
 |---|---|---|
@@ -27,6 +33,7 @@ python -m olga_route_model.experimental --input examples/experimental_synthetic.
 python -m olga_route_model.gps --input examples/gps_synthetic.kml --output run_gps
 python -m olga_route_model --input examples/synthetic.json --output run_route
 python -m olga_route_model.fuel_cost --input examples/fuel_cost_synthetic.json --output run_cost
+python -m olga_route_model.fuel_cost --input examples/fuel_cost_equal_quality_synthetic.json --output run_cost_equal_quality
 ```
 
 Each module writes JSON and CSV. See [inputs](docs/INPUT_OUTPUT.md),
@@ -54,17 +61,21 @@ require complete, documented life-cycle factors and are not a fuel certificate.
 
 Component C multiplies fuel quantities by prices and explores assumed changes.
 It is not a CBA, ownership-cost model or estimate of biomethane production cost.
-It is a new optional extension, not retrospectively part of an earlier D2.8 draft.
+Its availability does not mean it was executed for an earlier D2.8 draft.
+The general and equal-gas-quality examples are separate synthetic scenarios.
 
 ## Provenance and status
 
 The route and experimental calculation code extends the supplied v0.2.0 source
 archive. The timestamped GPS component and optional fuel-cost component were
-prepared in this candidate. The historical workbook source was inspected,
+introduced in the 0.3.0rc1 preparation candidate. Version 0.3.0
+retains its calculation code and finalises licensing and documentation. The historical workbook source was inspected,
 not rerun as a complete original document-to-workbook workflow. Details are in
 [provenance](docs/PROVENANCE.md) and [alternatives](docs/ALTERNATIVES.md).
 
 Software preparation and documentation used AI assistance. Responsibility for
 scientific interpretation and release remains with the project contributors.
-No consortium endorsement, software validation or public GitHub location is
-claimed. [Release steps](docs/RELEASE.md) identify the remaining decisions.
+No consortium endorsement or independent physical validation is claimed.
+[Release steps](docs/RELEASE.md) describe publication and a version-specific
+reference. [CITATION.cff](CITATION.cff) provides software citation metadata;
+deliverable contributors are credited separately in D2.8.
